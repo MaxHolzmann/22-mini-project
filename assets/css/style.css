@@ -1,69 +1,62 @@
 @import url("https://fonts.googleapis.com/css?family=Gudea");
 
 * {
+    margin: 0;
+    padding: 0;
     font-family: Gudea; 
 }
 
 body {
-    display: flex;
-    flex-direction: column;
+    position: relative;
 }
 
 li {
+    display: inline;
+    text-decoration: none;
     list-style-type: none;
 }
 
-a, a:link, a:visited {
+a,
+a:visited,
+a:link {
     text-decoration: none;
+    color: white; /* change this */
 }
 
-header,
+header {
+    width: 100%;
+    position: fixed;
+    background-color: #FFCC00;
+}
+
 footer {
-    background-color: #FF9900;
-    border-radius: 10px;
-}
-
-.navbar {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    font-size: 24px;
-}
-
-.nav-text{
-    color: white;
-}
-
-.nav-text:hover {
-    color: black;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFCC00;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    bottom: 0; 
+    height: 2.5rem;
 }
 
 .main-section {
-    color: black;
-    text-shadow: 1px 1px white;
-    margin: 10px;
-    border-radius: 10px;
-    background-color: lightgray;
-
+    padding-top: 20px;
+    padding-bottom: 2.5rem;
 }
 
-.profile-img {
-    width: 20%;
-    border-radius: 20px;
+.page-container {
+    position: relative;
+    min-height: 100vh;
 }
 
-.profile-img:hover {
-    box-shadow: 0 2px 2px black;
-}
 
-.contact {
 
-}
 
-.footer {
-
-}
 
 .center-text {
     text-align: center;
 }
+
+
